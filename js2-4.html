@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js2-4</title>
+	<script type="text/javascript">
+		function person(name) {
+  this.name =name;
+  console.log(name);
+  
+}
+
+person.prototype.age = "20";
+var preeti = new person("preeti");
+
+  function student() {
+}
+
+student.prototype = preeti ;
+student.prototype.age= "22"; 
+var stu= new student;
+console.log(stu.age);
+
+ </script>
+</head>
+<body>
+
+</body>
+</html>
